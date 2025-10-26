@@ -98,8 +98,8 @@ Build the application for production:
 npm run build
 ```
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built by team Six Seven (team - 14)
-- 
+
 # Stellar2
