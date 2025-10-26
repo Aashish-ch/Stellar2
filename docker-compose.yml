@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=steller_create
+    ports:
+      - "5432:5432"

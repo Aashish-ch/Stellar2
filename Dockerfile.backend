@@ -1,0 +1,23 @@
+# Use Node.js LTS
+FROM node:20-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files for backend
+COPY backend/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy backend source code
+COPY backend/ .
+
+# Build backend (if needed)
+RUN npm run build
+
+# Expose port
+EXPOSE 8080
+
+# Start the backend server
+CMD ["npm", "start"]

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
+import { WalletButton } from './WalletButton';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,6 +82,11 @@ const Header = () => {
             )}
           </div>
         </nav>
+
+        {/* Wallet Button */}
+        <div className="hidden md:block">
+          <WalletButton />
+        </div>
 
         {/* Mobile Menu Button */}
         <Button
